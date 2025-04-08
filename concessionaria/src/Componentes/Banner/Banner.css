@@ -1,0 +1,9 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Largura total da tela */
+  height: 100vh; /* Altura total da tela */
+  object-fit: cover; /* Faz a imagem cobrir toda a área sem distorcer */
+  z-index: -1; /* Coloca a imagem no fundo */
+}
