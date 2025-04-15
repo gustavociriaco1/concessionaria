@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 
 
+
 function App() {
   
 
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
      <Banner />
      <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/> 
+    
     
       
       
