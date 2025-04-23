@@ -2,9 +2,9 @@ import "./Botao.css"
 
 
 
-const Botao= () =>{
+function Botao (){
     return(
-        <button classname="botao">Enviar</button>
+        <button className="botao">Cadastrar</button>
         
      
     )

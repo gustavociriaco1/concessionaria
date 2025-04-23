@@ -2,19 +2,21 @@
 import Botao from '../Botao/Botao';
 import CampoSenha from '../CampoSenha/CampoSenha';
 import CampoTexto from '../CampoTexto/CampoTexto';
-
+import { useNavigate } from 'react-router-dom';
 import './Formulario.css';
 import { useState } from 'react';
 import axios from 'axios';
 
 const Formulario = (props) => {
   const [nome, setNome] = useState('');
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
   const [senha, setSenha] = useState('');
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
+    navigate('/Home');
 
     const novoUsuario = {
       nome,
@@ -70,7 +72,7 @@ const Formulario = (props) => {
           valor={senha}
           aoAlterado={(valor) => setSenha(valor)}
         />
-        <Botao>Cadastrar</Botao>
+        <Botao />
       </form>
     </section>
   );
